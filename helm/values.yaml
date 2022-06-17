@@ -1,0 +1,10 @@
+common:
+  image:
+    repository: "container.divistant.com/sample-flask:alpha"
+
+  imagePullSecrets:
+    - name: divistant-registry
+
+  service:
+    type: ClusterIP
+    port: 5000
